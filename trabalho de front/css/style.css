@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005ea8;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Promoção */
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    position: relative;
+}
+
+.promo-text {
+    text-align: center;
+    margin-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.promo-text h1 {
+    font-size: 2rem;
+    color: #005ea8;
+}
+
+.promo-text button {
+    padding: 10px 20px;
+    background-color: #ffb800;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.promo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+     background-repeat: no-repeat;
+    background-image: cover;
+  
+  background-size: cover;
+  
+}
+
+/* Centralizando o formulário de reserva */
+/* Formulário de Reserva */
+.reserva {
+    
+    padding: 40px 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border-radius: 12px; 
+    border: 1px solid #ddd;  
+}
+
+.reserva h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #005ea8;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    gap: 20px; /* Espaçamento entre os campos */
+    justify-content: space-between; /* Organiza os campos de forma espaçada */
+    width: 100%; /* Garante que o formulário ocupe toda a largura disponível */
+}
+
+.form-group {
+    flex: 1; /* Faz os campos ocuparem igualmente o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    min-width: 200px; /* Define uma largura mínima para os inputs */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordas arredondadas nos inputs */
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1); /* Sombra interna leve */
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #005ea8; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove o outline padrão */
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #005ea8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centraliza o botão */
+}
+
+button[type="submit"]:hover {
+    background-color: #004080; /* Cor mais escura no hover */
+}
+
+/* Estilização para telas menores (responsivo) */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Centralizando a seção de ofertas */
+.ofertas {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 90%; /* Limita a largura da seção */
+}
+
+.oferta {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top; /* Garante o alinhamento das ofertas */
+}
+
+.oferta img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.oferta h3 {
+    margin: 10px 0;
+}
+
+/* Navios com imagem de fundo e centralização */
+
+.navios {
+    background-image: url(../imgs/star-of-the-seas-sunset-sailing.png);
+    background-repeat: no-repeat;
+    background-image: cover;
+    text-align: center;
+  background-size: cover;
+  
+
+}
+.navios h2{
+    margin-left: 6rem;
+    color: #f4f4f4;
+   font-size: 3rem;
+align-content: space-around;
+display: flex;
+
+}
+
+
+.navio {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.navio img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #005ea8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
