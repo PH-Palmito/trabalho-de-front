@@ -1,110 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Royal Caribbean - Promoção</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Caribbean</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="imgs/logo.png" alt="Royal Caribbean Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Encontre seu Cruzeiro</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Nossos Navios</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Gerenciar</a></li>
-                <li><a href="#">Meu Cruzeiro</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="imgs/logo.png" alt="Royal Caribbean Logo"> <!-- Substituir pelo caminho correto do logo -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">ENCONTRE SEU CRUZEIRO</a></li>
+          <li><a href="#">OFERTAS</a></li>
+          <li><a href="#">NOSSOS NAVIOS</a></li>
+          <li><a href="#">DESTINOS</a></li>
+          <li><a href="#">GERENCIAR</a></li>
+          <li><a href="#">MEU CRUZEIRO</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Promoção -->
-    <section class="promo">
-        <div class="promo-text">
-            <h1>ATÉ R$ 3.045 DE DESCONTO</h1>
-            <button>COMPRE AGORA</button>
+  <!-- Seção principal com a imagem da praia -->
+  <div class="hero-section">
+    <div class="content">
+      <h1>CORRA E APROVEITE<br>ATÉ R$ 3.045 DE DESCONTO</h1>
+      <button>COMPRE AGORA</button>
+    </div>
+    <div class="booking-form">
+      <form>
+        <div class="form-group">
+          <label for="destino">Destino</label>
+          <select id="destino">
+            <option>Selecionar...</option>
+          </select>
         </div>
-        <div class="promo-image">
-            <img src="imgs/bg_main 1.png" alt="Promoção Royal Caribbean">
-        </div>
-    </section>
 
-    <!-- Formulário de Reserva -->
-    <section class="reserva">
-        <form>
-            <div class="form-group">
-                <label for="destino">Destino</label>
-                <select id="destino">
-                    <option>Selecione...</option>
-                    <!-- Adicionar opções -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="embarque">Porto de Embarque</label>
-                <select id="embarque">
-                    <option>Selecione...</option>
-                    <!-- Adicionar opções -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="data">Data de Embarque</label>
-                <input type="date" id="data">
-            </div>
-            <div class="form-group">
-                <label for="passageiros">Passageiros</label>
-                <input type="number" id="passageiros" value="2">
-            </div>
-            <button type="submit">Buscar</button>
-        </form>
-    </section>
+        <div class="form-group">
+          <label for="embarque">Porto de Embarque</label>
+          <select id="embarque">
+            <option>Selecionar...</option>
+          </select>
+        </div>
 
-    <!-- Ofertas -->
-    <section class="ofertas">
-        <h2>Corra e Aproveite</h2>
-        <div class="oferta">
-            <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view.png" alt="Bahamas Cruise">
-            <h3>4 Night Bahamas & Perfect Day Cruise</h3>
-            <p>A partir de R$ 2.500,00/pessoa</p>
+        <div class="form-group">
+          <label for="data">Data de Embarque</label>
+          <input type="date" id="data">
         </div>
-        <div class="oferta">
-            <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view (1).png" alt="Perfect Day Getaway">
-            <h3>Perfect Day Getaway Cruise</h3>
-            <p>A partir de R$ 4.500,00/pessoa</p>
-        </div>
-        <div class="oferta">
-            <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view (2).png" alt="Short Caribbean Cruise">
-            <h3>Short Caribbean Cruise</h3>
-            <p>A partir de R$ 5.500,00/pessoa</p>
-        </div>
-    </section>
 
-    <!-- Navios -->
-    <section class="navios">
-        <h2>Nossos Navios</h2>
-        <div class="navio">
-            <img src="imgs/imagem1 navio.png" alt="Icons of the Seas">
-            <h3>Icons of the Seas</h3>
+        <div class="form-group">
+          <label for="passageiros">Passageiros</label>
+          <input type="text" id="passageiros" value="2 adult">
         </div>
-        <div class="navio">
-            <img src="imgs/utopia-of-the-seas-sunseet-sailing-portrait-new.png" alt="Utopia of the Seas">
-            <h3>Utopia of the Seas</h3>
-        </div>
-        <div class="navio">
-            <img src="imgs/star-of-the-seas-aft-sailing-night-time-up.png" alt="Star of the Seas">
-            <h3>Star of the Seas</h3>
-        </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Royal Caribbean International</p>
-    </footer>
+        <button type="submit">BUSCAR</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Seção de ofertas de cruzeiros -->
+  <div class="offers-section">
+    <h2>CORRA E APROVEITE</h2>
+    <div class="offer-cards">
+      <div class="offer-card">
+        <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view (1).png" alt="Cruzeiro 1">
+        <p>4 Night Bahamas & Perfect Day Cruise<br><strong>R$ 2.500,00/pessoa</strong></p>
+      </div>
+      <div class="offer-card">
+        <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view (2).png">
+        <p>Perfect Day Getaway Cruise<br><strong>R$ 4.500,00/pessoa</strong></p>
+      </div>
+      <div class="offer-card">
+        <img src="imgs/arrivals-plaza-perfect-day-at-cococay-aerial-view.png" alt="Cruzeiro 3">
+        <p>Short Caribbean Cruise<br><strong>R$ 5.500,00/pessoa</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção dos navios com imagem de fundo -->
+  <div class="ships-section">
+    <h2>NOSSOS NAVIOS</h2>
+    <div class="ships-cards">
+      <div class="ship-card">
+        <p>ICONS OF THE SEAS</p>
+      </div>
+      <div class="ship-card">
+        <p>UTOPIA OF THE SEAS</p>
+      </div>
+      <div class="ship-card">
+        <p>STAR OF THE SEAS</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 ROYAL CARIBBEAN INTERNATIONAL</p>
+  </footer>
 </body>
 </html>
